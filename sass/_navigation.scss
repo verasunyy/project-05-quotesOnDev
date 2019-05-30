@@ -4,6 +4,7 @@
 
 /* Links */
 
+/*
 a {
 	color: $color__link;
 
@@ -23,9 +24,11 @@ a {
 		outline: 0;
 	}
 }
+*/
 
 /* Menus */
 
+/*
 .main-navigation {
 	clear: both;
 	display: block;
@@ -94,8 +97,10 @@ a {
 	.current_page_ancestor > a {
 	}
 }
+*/
 
 /* Small menu. */
+/*
 .menu-toggle,
 .main-navigation.toggled ul {
 	display: block;
@@ -128,5 +133,21 @@ a {
 		float: right;
 		text-align: right;
 		width: 50%;
+	}
+}
+*/
+
+.main-navigation{
+	li{
+		display:inline-block;
+
+		&:not(:last-child){
+			
+		&:after {
+			letter-spacing: 1.5rem;
+			content:' |';
+		}
+		}
+
 	}
 }

@@ -4,6 +4,7 @@
 
 /* Posts and pages */
 
+/*
 .sticky {
 	display: block;
 }
@@ -30,4 +31,109 @@
 .page-links {
 	clear: both;
 	margin: 0 0 $base__space-unit;
+}
+*/
+
+/************************   Home Page  ***********************/
+.home{
+	.site{
+		max-width: 1080px;
+		margin:0 auto;
+		padding:1.5rem;
+	}
+	.site-header{
+		width:300px;
+		margin-top:3rem;
+		@include tablet{
+			width:500px;
+		}
+		@include desktop{
+			width:700px;
+			margin:3.5rem auto;
+		}
+		img{
+			width:100%;
+		}
+	}
+	.site-content{
+		font-size:1.25rem;
+		@include tablet{
+			font-size:1.75rem;
+			margin-top: 1.5rem;
+		}
+		@include desktop{
+			max-width: 1080px;;
+			margin:3.5rem auto;
+			font-size:2.5rem;
+		}
+		.content-area{
+			margin-top:1rem;
+			@include desktop{
+
+				display:flex;
+				&:before{
+					font-family: "FontAwesome";  content: "\f10d";
+					font-size: 8rem;
+					line-height: normal;
+					color:$color__main-brand;
+					padding-right:1rem;
+				}
+				&:after{
+					font-family:"FontAwesome"; content: "\f10e";
+					font-size:8rem;
+					line-height: normal;
+					color:$color__main-brand;
+					padding-left:1rem;
+				}
+			}
+			.site-main{
+				@include desktop{
+					width:700px;
+					margin:0 auto;
+				}
+			}
+		}
+		.entry-content{
+			p{
+				display:inline-block;
+				margin:0;
+			}
+		}
+		.entry-meta{
+			margin-bottom:1.5rem;
+			.entry-title, .source{
+				display:inline-block;
+				font-size:1.25rem;
+				font-weight:300;
+			}
+		}
+		.quote-button{
+			font-size: 1rem;
+			font-weight:300;
+			@include tablet{
+				font-size:1.25rem;
+				font-weight:400;
+			}
+			@include desktop{
+				text-align: center;
+			}
+		}
+	}
+	.site-footer{
+		.menu{
+			margin-top: 4rem;
+
+			ul{
+				padding:0;
+			}
+			@include desktop{
+				text-align: right;
+			}
+		}
+	}
+
+
+
+
+
 }

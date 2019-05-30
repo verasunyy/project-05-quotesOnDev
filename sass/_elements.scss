@@ -15,9 +15,41 @@ html {
 }
 
 body {
-  background: $color__background-body; /* Fallback for when there is no custom background color defined. */
+  width:100vw;
+  background: $color__background-body;
+  color:$color__text-main;
+  font-family: $font__main;
+  font-weight:300;
+  line-height:$font__line-height-body;
 }
 
+button{
+  border:2px solid $color__main-brand;
+  border-radius: 3px;
+  background:transparent;
+  padding:0.75rem 2.5rem;
+  line-height:1;
+  color:$color__main-brand;
+  margin:0 auto;
+  outline:0;
+  &:hover{
+    color:$color__link-hover;
+    border-color:$color__link-hover;
+  }
+}
+
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color:$color__main-brand;
+  &:hover{
+    color:$color__link-hover;
+  }
+}
+
+/*
 blockquote,
 q {
   quotes: '' '';
@@ -61,13 +93,15 @@ dt {
 dd {
   margin: 0 $base__space-unit $base__space-unit;
 }
+*/
 
-img {
-  height: auto; /* Make sure images are scaled correctly. */
-  max-width: 100%; /* Adhere to container width. */
-}
+// img {
+//   height: auto; /* Make sure images are scaled correctly. */
+//   max-width: 100%; /* Adhere to container width. */
+// }
 
-table {
-  margin: 0 0 $base__space-unit;
-  width: 100%;
-}
+// table {
+//   margin: 0 0 $base__space-unit;
+//   width: 100%;
+// }
+
