@@ -2,39 +2,9 @@
 # Content
 --------------------------------------------------------------*/
 
-/* Posts and pages */
-
-/*
-.sticky {
-	display: block;
-}
-
-.hentry {
-	margin: 0 0 $base__space-unit;
-}
-
-.updated:not(.published){
-	display: none;
-}
-
-.single .byline,
-.group-blog .byline {
-	display: inline;
-}
-
-.page-content,
-.entry-content,
-.entry-summary {
-	margin: $base__space-unit 0 0;
-}
-
-.page-links {
-	clear: both;
-	margin: 0 0 $base__space-unit;
-}
-*/
 
 /************************   Home Page  ***********************/
+/************************   Basic Layout  ***********************/
 .home, .page, .single-post, .archive, .error404, .search-results{
 	.site{
 		max-width: 1080px;
@@ -135,6 +105,8 @@
 		}
 	}
 }
+
+/************************   Page-Archives Page  ***********************/
 .page-archives{
 	h1{
 		font-size:3rem;
@@ -162,6 +134,8 @@
 		}
 	}
 }
+
+/************************   About, Submit, 404 Page  ***********************/
 .page-about, .page-submit, .error404{
 	h1{
 		font-size:2rem;
@@ -221,6 +195,8 @@
 	}	
 
 }
+
+/************************   Search Page  ***********************/
 .search-results{
 	h1{
 		font-size:2rem;

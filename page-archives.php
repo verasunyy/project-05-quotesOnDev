@@ -18,9 +18,7 @@ get_header(); ?>
                 <h2>Quote Authors</h2>
                 <ul>
                     <?php
-                    //posts_per_page=-1 means that get everything
-                    //post_per_page is the setting limited number pages 
-                    //in the function pre_get_post();
+                    //posts_per_page=-1 means that get everything post_per_page is the setting limited number pages in the function pre_get_post();
                     $posts = get_posts('posts_per_page= -1');
                     foreach($posts as $post):setup_postdata($post);
                     ?>
