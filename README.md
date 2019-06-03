@@ -1,23 +1,16 @@
 # Quotes on Dev Starter
 
-A WordPress starter theme for the Quotes on Dev project, forked from Underscores.
+A custom theme for the Quotes on Dev project, forked from Underscores. It get random quotes from the database and also allow users to submit a quote.
 
-## Installation
+# Learnings
 
-### 1. Download me (don't clone me!)
+the main purpose of this project is to learn how to combine your JavaScript and WordPress skills together to build out the functionality for a website called Quotes on Dev using the WordPress REST API.
 
-Then add me to your `wp-content/themes` directory.
+## Jquery
 
-### 2. Rename the `quotesondev-starter-master` directory
+Use jQuery’s “ajax” method to make asynchronous requests to APIs and handle success/failure responses appropriatel
 
-Make sure that the theme directory name is project appropriate! Do you need `starter` or `master` in the directory name?
-
-### 3. Install the dev dependencies
-
-Next you'll need to run `npm install` **inside your theme directory** to install the npm packages you'll need for Gulp, etc.
-
-### 4. Update the proxy in `gulpfile.js`
-
-Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Browsersync proxy (so change `localhost[:port-here]/[your-dir-name-here]` to the appropriate localhost URL).
-
-And now would be a good time to `git init` :)
+- Make a GET request to a WP REST API endpoint using Ajax to dynamically add a new quote to the front page, and corresponding update the URL using the History API
+- Make a POST request to a WP REST API endpoint using Ajax to submit a new quote to the site
+- Clear the quote submission form and show an affirmative message when a quote is successfully submitted to the database
+- Show an error message when a quote is not successfully submitted to the database
