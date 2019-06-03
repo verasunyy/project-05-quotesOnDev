@@ -37,7 +37,6 @@ get_header(); ?>
                 <ul>
                     <?php wp_list_categories('title_li='); ?>
                 </ul>
-
             </div>
 
             <div class="tag-archives">

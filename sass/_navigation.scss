@@ -138,15 +138,33 @@ a {
 */
 
 .main-navigation{
+	@include desktop{
+		text-align: right;
+
+	}
+	margin-top:3rem;
+	margin-bottom:3rem;
+	.menu{
+		display: inline;
+	}
+	ul{	
+		margin-bottom:0;	
+		@include tablet{
+		display:inline-block;
+	}
+	}
 	li{
 		display:inline-block;
-
-		&:not(:last-child){
 			
-		&:after {
-			letter-spacing: 1.5rem;
+		&:not(:last-child):after {
+			letter-spacing: 1rem;
 			content:' |';
 		}
+		@include tablet{
+			&:after {
+				letter-spacing: 1rem;
+				content:' |';
+			}
 		}
 
 	}

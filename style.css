@@ -613,11 +613,28 @@ a {
 	}
 }
 */
-.main-navigation li {
-  display: inline-block; }
-  .main-navigation li:not(:last-child):after {
-    letter-spacing: 1.5rem;
-    content: ' |'; }
+.main-navigation {
+  margin-top: 3rem;
+  margin-bottom: 3rem; }
+  @media only screen and (min-width: 1080px) {
+    .main-navigation {
+      text-align: right; } }
+  .main-navigation .menu {
+    display: inline; }
+  .main-navigation ul {
+    margin-bottom: 0; }
+    @media only screen and (min-width: 600px) {
+      .main-navigation ul {
+        display: inline-block; } }
+  .main-navigation li {
+    display: inline-block; }
+    .main-navigation li:not(:last-child):after {
+      letter-spacing: 1rem;
+      content: ' |'; }
+    @media only screen and (min-width: 600px) {
+      .main-navigation li:after {
+        letter-spacing: 1rem;
+        content: ' |'; } }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -702,50 +719,50 @@ a {
 }
 */
 /************************   Home Page  ***********************/
-.home .site {
+.home .site, .page .site, .single-post .site, .archive .site, .error404 .site, .search-results .site {
   max-width: 1080px;
   margin: 0 auto;
   padding: 1.5rem; }
 
-.home .site-header {
+.home .site-header, .page .site-header, .single-post .site-header, .archive .site-header, .error404 .site-header, .search-results .site-header {
   width: 300px;
   margin-top: 3rem; }
   @media only screen and (min-width: 600px) {
-    .home .site-header {
+    .home .site-header, .page .site-header, .single-post .site-header, .archive .site-header, .error404 .site-header, .search-results .site-header {
       width: 500px; } }
   @media only screen and (min-width: 1080px) {
-    .home .site-header {
+    .home .site-header, .page .site-header, .single-post .site-header, .archive .site-header, .error404 .site-header, .search-results .site-header {
       width: 700px;
       margin: 3.5rem auto; } }
-  .home .site-header img {
+  .home .site-header img, .page .site-header img, .single-post .site-header img, .archive .site-header img, .error404 .site-header img, .search-results .site-header img {
     width: 100%; }
 
-.home .site-content {
+.home .site-content, .page .site-content, .single-post .site-content, .archive .site-content, .error404 .site-content, .search-results .site-content {
   font-size: 1.25rem; }
   @media only screen and (min-width: 600px) {
-    .home .site-content {
+    .home .site-content, .page .site-content, .single-post .site-content, .archive .site-content, .error404 .site-content, .search-results .site-content {
       font-size: 1.75rem;
       margin-top: 1.5rem; } }
   @media only screen and (min-width: 1080px) {
-    .home .site-content {
+    .home .site-content, .page .site-content, .single-post .site-content, .archive .site-content, .error404 .site-content, .search-results .site-content {
       max-width: 1080px;
       margin: 3.5rem auto;
       font-size: 2.5rem; } }
-  .home .site-content .content-area {
+  .home .site-content .content-area, .page .site-content .content-area, .single-post .site-content .content-area, .archive .site-content .content-area, .error404 .site-content .content-area, .search-results .site-content .content-area {
     margin-top: 1rem; }
     @media only screen and (min-width: 1080px) {
-      .home .site-content .content-area {
+      .home .site-content .content-area, .page .site-content .content-area, .single-post .site-content .content-area, .archive .site-content .content-area, .error404 .site-content .content-area, .search-results .site-content .content-area {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex; }
-        .home .site-content .content-area:before {
+        .home .site-content .content-area:before, .page .site-content .content-area:before, .single-post .site-content .content-area:before, .archive .site-content .content-area:before, .error404 .site-content .content-area:before, .search-results .site-content .content-area:before {
           font-family: "FontAwesome";
           content: "\f10d";
           font-size: 8rem;
           line-height: normal;
           color: #00cc00;
           padding-right: 1rem; }
-        .home .site-content .content-area:after {
+        .home .site-content .content-area:after, .page .site-content .content-area:after, .single-post .site-content .content-area:after, .archive .site-content .content-area:after, .error404 .site-content .content-area:after, .search-results .site-content .content-area:after {
           font-family: "FontAwesome";
           content: "\f10e";
           font-size: 8rem;
@@ -753,36 +770,131 @@ a {
           color: #00cc00;
           padding-left: 1rem; } }
     @media only screen and (min-width: 1080px) {
-      .home .site-content .content-area .site-main {
+      .home .site-content .content-area .site-main, .page .site-content .content-area .site-main, .single-post .site-content .content-area .site-main, .archive .site-content .content-area .site-main, .error404 .site-content .content-area .site-main, .search-results .site-content .content-area .site-main {
         width: 700px;
         margin: 0 auto; } }
-  .home .site-content .entry-content p {
+  .home .site-content .entry-content p, .page .site-content .entry-content p, .single-post .site-content .entry-content p, .archive .site-content .entry-content p, .error404 .site-content .entry-content p, .search-results .site-content .entry-content p {
     display: inline-block;
     margin: 0; }
-  .home .site-content .entry-meta {
+  .home .site-content .entry-meta, .page .site-content .entry-meta, .single-post .site-content .entry-meta, .archive .site-content .entry-meta, .error404 .site-content .entry-meta, .search-results .site-content .entry-meta {
     margin-bottom: 1.5rem; }
-    .home .site-content .entry-meta .entry-title, .home .site-content .entry-meta .source {
-      display: inline-block;
+    .home .site-content .entry-meta .source, .page .site-content .entry-meta .source, .single-post .site-content .entry-meta .source, .archive .site-content .entry-meta .source, .error404 .site-content .entry-meta .source, .search-results .site-content .entry-meta .source {
+      margin-left: -5px; }
+    .home .site-content .entry-meta .entry-title, .home .site-content .entry-meta .source, .page .site-content .entry-meta .entry-title, .page .site-content .entry-meta .source, .single-post .site-content .entry-meta .entry-title, .single-post .site-content .entry-meta .source, .archive .site-content .entry-meta .entry-title, .archive .site-content .entry-meta .source, .error404 .site-content .entry-meta .entry-title, .error404 .site-content .entry-meta .source, .search-results .site-content .entry-meta .entry-title, .search-results .site-content .entry-meta .source {
+      display: inline;
       font-size: 1.25rem;
       font-weight: 300; }
-  .home .site-content .quote-button {
+  .home .site-content .quote-button, .page .site-content .quote-button, .single-post .site-content .quote-button, .archive .site-content .quote-button, .error404 .site-content .quote-button, .search-results .site-content .quote-button {
     font-size: 1rem;
-    font-weight: 300; }
+    font-weight: 400; }
     @media only screen and (min-width: 600px) {
-      .home .site-content .quote-button {
+      .home .site-content .quote-button, .page .site-content .quote-button, .single-post .site-content .quote-button, .archive .site-content .quote-button, .error404 .site-content .quote-button, .search-results .site-content .quote-button {
         font-size: 1.25rem;
         font-weight: 400; } }
     @media only screen and (min-width: 1080px) {
-      .home .site-content .quote-button {
+      .home .site-content .quote-button, .page .site-content .quote-button, .single-post .site-content .quote-button, .archive .site-content .quote-button, .error404 .site-content .quote-button, .search-results .site-content .quote-button {
         text-align: center; } }
 
-.home .site-footer .menu {
+.home .site-footer .menu, .page .site-footer .menu, .single-post .site-footer .menu, .archive .site-footer .menu, .error404 .site-footer .menu, .search-results .site-footer .menu {
   margin-top: 4rem; }
-  .home .site-footer .menu ul {
+  .home .site-footer .menu ul, .page .site-footer .menu ul, .single-post .site-footer .menu ul, .archive .site-footer .menu ul, .error404 .site-footer .menu ul, .search-results .site-footer .menu ul {
     padding: 0; }
   @media only screen and (min-width: 1080px) {
-    .home .site-footer .menu {
+    .home .site-footer .menu, .page .site-footer .menu, .single-post .site-footer .menu, .archive .site-footer .menu, .error404 .site-footer .menu, .search-results .site-footer .menu {
       text-align: right; } }
+
+.page-archives h1 {
+  font-size: 3rem;
+  margin-top: 0; }
+
+.page-archives h2 {
+  font-size: 2rem; }
+
+.page-archives .post-archives ul, .page-archives .category-archives ul, .page-archives .tag-archives ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0;
+  margin-top: 0; }
+  .page-archives .post-archives ul li, .page-archives .category-archives ul li, .page-archives .tag-archives ul li {
+    margin: 0.25rem 0.5rem;
+    font-size: 1rem; }
+    @media only screen and (min-width: 600px) {
+      .page-archives .post-archives ul li, .page-archives .category-archives ul li, .page-archives .tag-archives ul li {
+        font-size: 1.25rem; } }
+
+.page-about h1, .page-submit h1, .error404 h1 {
+  font-size: 2rem;
+  margin-top: 0; }
+
+.page-about a, .page-about p, .page-about label, .page-about input, .page-about textarea, .page-submit a, .page-submit p, .page-submit label, .page-submit input, .page-submit textarea, .error404 a, .error404 p, .error404 label, .error404 input, .error404 textarea {
+  font-size: 1.1rem; }
+
+.page-about label, .page-submit label, .error404 label {
+  display: block; }
+  .page-about label .required, .page-submit label .required, .error404 label .required {
+    color: #00cc00; }
+
+.page-about textarea, .page-submit textarea, .error404 textarea {
+  width: 100%;
+  margin-bottom: 1.5rem;
+  height: 8rem; }
+
+.page-about input, .page-about textarea, .page-submit input, .page-submit textarea, .error404 input, .error404 textarea {
+  padding: 0.5rem;
+  background: transparent;
+  border: 1px solid #00cc00;
+  border-radius: 3px; }
+
+.page-about input, .page-submit input, .error404 input {
+  width: 55%;
+  height: 2.5rem;
+  margin-bottom: 1.5rem; }
+
+.page-about input[type=submit], .page-submit input[type=submit], .error404 input[type=submit] {
+  width: auto;
+  padding: 0.5rem 2rem;
+  margin-top: 2rem;
+  color: #00cc00; }
+
+.page-about fieldset, .page-submit fieldset, .error404 fieldset {
+  border: none;
+  padding: 0; }
+  .page-about fieldset label, .page-submit fieldset label, .error404 fieldset label {
+    display: inline; }
+    .page-about fieldset label input, .page-submit fieldset label input, .error404 fieldset label input {
+      width: 250px;
+      border-width: 2px; }
+  .page-about fieldset button, .page-submit fieldset button, .error404 fieldset button {
+    border: none;
+    padding-left: 0.75rem; }
+    .page-about fieldset button:after, .page-submit fieldset button:after, .error404 fieldset button:after {
+      font-family: "FontAwesome";
+      content: "\f002";
+      font-size: 1.5rem;
+      line-height: normal;
+      color: #00cc00; }
+
+.search-results h1 {
+  font-size: 2rem;
+  margin-top: 0;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px dotted white; }
+
+.search-results h2 {
+  font-size: 1.5rem;
+  font-weight: 400; }
+
+.search-results p, .search-results .number-pagination {
+  font-size: 1.1rem; }
+
+.search-results .number-pagination {
+  margin-top: 3.5rem; }
+
+.fail-message, .field-required, .success-message {
+  color: red; }
 
 /*--------------------------------------------------------------
 # Media
@@ -809,4 +921,25 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* All Archives Page */
+.archive h1 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-top: 1.5rem; }
+
+.archive article {
+  border-top: 1px dashed #fff;
+  margin: 0;
+  padding: 1.5rem 0;
+  font-size: 1.25rem; }
+  .archive article:last-child {
+    border-bottom: 1px dashed #fff; }
+  @media only screen and (min-width: 1080px) {
+    .archive article {
+      font-size: 1.75rem; } }
+
+.archive .number-pagination {
+  font-size: 1rem; }
+  .archive .number-pagination .page-numbers {
+    padding: 0 0.25rem; }
+
 /* Submit a Quote Page */

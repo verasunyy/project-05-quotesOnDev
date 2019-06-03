@@ -35,7 +35,7 @@
 */
 
 /************************   Home Page  ***********************/
-.home{
+.home, .page, .single-post, .archive, .error404, .search-results{
 	.site{
 		max-width: 1080px;
 		margin:0 auto;
@@ -101,15 +101,18 @@
 		}
 		.entry-meta{
 			margin-bottom:1.5rem;
+			.source{
+				margin-left: -5px;
+			}
 			.entry-title, .source{
-				display:inline-block;
+				display:inline;
 				font-size:1.25rem;
 				font-weight:300;
 			}
 		}
 		.quote-button{
 			font-size: 1rem;
-			font-weight:300;
+			font-weight:400;
 			@include tablet{
 				font-size:1.25rem;
 				font-weight:400;
@@ -131,9 +134,109 @@
 			}
 		}
 	}
+}
+.page-archives{
+	h1{
+		font-size:3rem;
+		margin-top:0;
+	}
+	h2{
+		font-size:2rem;
+	}
+	.post-archives, .category-archives, .tag-archives{
+		ul{
+			display:flex;
+			flex-wrap: wrap;
+			padding:0;
+			margin-top:0;
+			li{
+				margin:0.25rem 0.5rem;
+				font-size:1rem;
+				@include tablet{
+					font-size:1.25rem;
+				}
+			}
+		}
+	}
+}
+.page-about, .page-submit, .error404{
+	h1{
+		font-size:2rem;
+		margin-top:0;
+	}
+	a, p, label, input, textarea{
+		font-size:1.1rem;
+	}
+	label{
+		display:block;
+		.required{
+			color:$color__main-brand;
+		}
+	}
+	textarea{
+		width:100%;
+		margin-bottom:1.5rem;
+		height:8rem;
+	}
+	input, textarea{
+		padding:0.5rem;
+		background:transparent;
+		border:1px solid $color__main-brand;
+		border-radius: 3px;
+	}
+	input{
+		width: 55%;
+		height:2.5rem;
+		margin-bottom:1.5rem;	
+	}
+	input[type=submit]{
+		width:auto;
+		padding:0.5rem 2rem;
+		margin-top:2rem;
+		color:$color__main-brand;
+	}
+	fieldset{
+		border:none;
+		padding:0;
+		label{
+			display:inline;
+			input{
+				width:250px;
+				border-width: 2px;
+			}
+		}
+		button{
+			border:none;
+			padding-left:0.75rem;
+			&:after{
+				font-family:"FontAwesome"; content: "\f002";
+					font-size:1.5rem;
+					line-height: normal;
+					color:$color__main-brand;				
+			}
+		}
+	}	
 
+}
+.search-results{
+	h1{
+		font-size:2rem;
+		margin-top:0;
+		padding-bottom:1.5rem;
+		border-bottom:1px dotted white;
+	}
+	h2{
+		font-size:1.5rem;
+		font-weight:400;
+	}
+	p, .number-pagination{
+		font-size:1.1rem;
+	}
+	.number-pagination{
+		margin-top: 3.5rem;
+	}
+}
 
-
-
-
+.fail-message, .field-required, .success-message{
+	color:red;
 }

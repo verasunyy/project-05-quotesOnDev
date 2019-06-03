@@ -61,14 +61,14 @@ function qod_scripts() {
 	wp_enqueue_script("jquery");
 	wp_enqueue_script("qod-scripts", $script_url, array("jquery"), false, true);
 	wp_enqueue_style('font-awesome', '//stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'); 
-	//TODO add Font Awesome wp_enqueue_style, this is used for quotes
-	//try adding the quotes with css :: after and ::before psuedo element
-	//TODO add script.js file wp_enqueque_script
 
 	wp_localize_script("qod-scripts", "api_vars", array(
-		"rest_url" => rest_url(),
-		"wpapi_nonce" => wp_create_nonce("wp_rest"),
-		"post_id" => get_the_ID()
+		"rest_url" => esc_url_raw(rest_url()),
+		"home_url" => esc_url_raw(home_url()),
+		"nonce" => wp_create_nonce("wp_rest"),
+		"post_id" => get_the_ID(),
+		'success' => 'Thank you for subscribe!',
+		'failure' => 'Sorry please submit again'
 	));
 
 	wp_enqueue_script( 'qod-starter-navigation', get_template_directory_uri() . '/build/js/navigation.min.js', array(), '20151215', true );

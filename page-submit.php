@@ -11,19 +11,19 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
             <section class="quote-submission">
                 <header class="entry-header">
-                    <?php the_title('<h1 class="entry-title">','</h1>'); ?>
+                    <?php the_title('<h1 class="entry-title">',' a Quote</h1>'); ?>
                 </header>
 
                 <?php if(is_user_logged_in() && current_user_can('edit_posts')): ?>
                 <div class="quote-submission-wrapper">
                     <form name="quoteForm" id="quote-submission-form">
                         <div>
-                            <label for="quote-author">Author of Quote</label>
+                            <label for="quote-author">Author of Quote<span class="required">*</span></label>
                             <!-- name quote_author is underscore because it will be run at back-end -->
                             <input type="text" name="quote_author" id="quote-author">
                         </div>
                         <div>
-                            <label for="quote-content">Quote</label>
+                            <label for="quote-content">Quote<span class="required">*</span></label>
                             <textarea rows="3" colums="5" name="quote_content" id="quote-content"></textarea>
                         </div>
                         <div>

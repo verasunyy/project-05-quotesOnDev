@@ -13,12 +13,13 @@
     "no-eq-null": 0,
     "guard-for-in": 1,
     "no-empty": 1,
-    "quotes": [1, "single"]
+    "quotes": [0, "single"]
   },
   "globals": {
     "jQuery": false,
     "$": false,
-    "_": false
+    "_": false,
+    "api_vars":false
   },
   "env": {
     "es6": true,
